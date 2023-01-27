@@ -3,55 +3,236 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" href="css\dashboard.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
 
 </head>
 
-<body style="height:1359px;width:1560px">
+<body>
+
+    <!-- HEADER -->
     <header>
-        <img src="images/menu-bar.svg" class="menu-bar">
-        <img src="images/logo.svg" class="logo">
-        <img src="images/search-icon.svg" class="search-icon">
-        <span class="searchtext">Search</span>
-        <img src="images/notification-icon.svg" class="notify">
-        <img src="images/profile.png" class="profile">
-        <span class="profilename">John Doe</span>
-        <img src="images/select-downward.svg" class="downarrow">
+        <img src="images/menu-bar.svg" alt="menu-bar" class="menu-bar">
+        <img src="images/logo.svg" alt="company-logo" class="db-company-logo">
+        <img src="images/search-icon.svg" alt="search-icon" class="search-icon">
+        <span class="search-text"> Search </span>
+        <img src="images/notification-icon.svg" alt="notification-icon" class="notification-icon">
+        <img src="images/profile.png" alt="profile" class="profile">
+        <span class="john-doe">John Doe</span>
+        <img src="images/downward-arrow.svg" alt="downward-arrow" class="downward-arrow">
     </header>
+
+    <!-- SIDE-BAR -->
     <aside>
-        <div class="sizeddash">
-            <img src="images/dashboard-active.svg" class="dash-active-img">
-            <span class="dash-active-text">Dashboard</span>
+        <div class="dashboard-active-box">
+            <img src="images/dashboard-active.svg" alt="Dashboard" class="dashboard-active-img">
+            <span class="dashboard-active-text">Dashboard</span>
         </div>
         <div>
-            <img src="images/graph-default.svg" class="analysis-def-img">
+            <img src="images/graph-default.svg" alt="Analysis" class="analysis-def-img">
             <span class="analysis-def-text">Analysis</span>
         </div>
         <div>
-            <img src="images/inbox-default.svg" class="inbox-def-img">
+            <img src="images/inbox-default.svg" alt="Inbox" class="inbox-def-img">
             <span class="inbox-def-text">Inbox</span>
         </div>
         <div>
-            <img src="images/clock-default.svg" class="history-def-img">
+            <img src="images/clock-default.svg" alt="History" class="history-def-img">
             <span class="history-def-text">History</span>
         </div>
         <div>
-            <img src="images/user-default.svg" class="user-def-img">
-            <span class="user-def-text">Users</span>
+            <img src="images/user-default.svg" alt="Users" class="users-def-img">
+            <span class="users-def-text">Users</span>
         </div>
         <div>
-            <img src="images/maintenance-default.svg" class="maintenence-def-img">
-            <span class="maintenence-def-text">Maintenance</span>
+            <img src="images/maintenance-default.svg" alt="Maintenance" class="maintenance-def-img">
+            <span class="maintenance-def-text">Maintenance</span>
         </div>
         <div>
-            <img src="images/setting-default.svg" class="setting-def-img">
+            <img src="images/setting-default.svg" alt="Setting" class="setting-def-img">
             <span class="setting-def-text">Setting</span>
         </div>
     </aside>
 
+    <!-- ROW 1 -->
+    <div>
+        <span class="dashboard-heading">Dashboard</span>
+    </div>
+
+    <div class="new-p-box">
+        <img src="images/star.svg" alt="New Products" class="new-p-img">
+        <span class="new-p-num">23,456</span>
+        <span class="new-p-text">New Products</span>
+    </div>
+
+    <div class="add-p-box">
+        <img src="images/new-product.svg" alt="Added Product" class="add-p-img">
+        <span class="add-p-num">2345</span>
+        <span class="add-p-text">Added Products</span>
+    </div>
+
+    <div class="total-p-box">
+        <img src="images/total-product.svg" alt="Total Products" class="total-p-img">
+        <span class="total-p-num">32,456</span>
+        <span class="total-p-text">Total Products</span>
+    </div>
+
+    <div class="today-s-box">
+        <img src="images/dollar-filled.svg" alt="Today's Sale" class="today-s-img">
+        <span class="today-s-num">5678</span>
+        <span class="today-s-text">Today's Sale</span>
+    </div>
+
+    <div class="total-s-box">
+        <img src="images/money-bag.svg" alt="Total Sale" class="total-s-img">
+        <span class="total-s-num">33,5342</span>
+        <span class="total-s-text">Total Sale</span>
+    </div>
+
+    <!-- ROW 2 -->
+    <!-- GRAPH -->
+    <div class="sale-graph-box">
+        <span class="sale-text">Sale</span>
+        <div class="weekly-monthly">
+            Weekly Monthly
+        </div>
+        <div class="yearly">
+            Yearly
+        </div>
+        <div class="line"></div>
+        <img src="images/data-graph.png" alt="Data Graph" class="data-graph">
+    </div>
+
+    <!-- CHART -->
+    <div class="pie-chart-box">
+        <span class="pie-chart-text">Sales by Country</span>
+        <img src="images/pie-chart.svg" alt="Sales by Country" class="pie-chart-img">
+        <span class="pie-red-dot"> </span>
+        <span class="pie-red-text">United States of America</span>
+        <span class="pie-orange-dot"> </span>
+        <span class="pie-orange-text">Russia</span>
+        <span class="pie-green-dot"> </span>
+        <span class="pie-green-text">Canada</span>
+        <span class="pie-yellow-dot"> </span>
+        <span class="pie-yellow-text">India</span>
+    </div>
+
+    <!-- ROW 3 -->
+    <!-- INVOICES -->
+    <div class="invoices-box">
+        <span class="invoices-text">Invoices</span>
+        <span class="view-all">View All</span>
+
+        <div class="in-row-1">
+            <span style="position: absolute; margin-left: 40px;">INVOICE</span>
+            <span style="position: absolute; margin-left: 200px; width: 135px;">COMPANY NAME</span>
+            <span style="position: absolute; margin-left: 470px;">EMAIL</span>
+            <span style="position: absolute; margin-left: 740px; width: 80px;">DUE DATE</span>
+            <span style="position: absolute; margin-left: 900px">STATUS</span>
+            <span style="position: absolute; margin-left: 1060px;">AMOUNT</span>
+        </div>
+
+        <div class="in-row-2">
+            <span style="position: absolute; margin-left: 40px;">651535</span>
+            <span style="position: absolute; margin-left: 200px; width: 142px;">Public Adjusting Firm</span>
+            <span style="position: absolute; margin-left: 470px;">georgia.young@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="paid">
+                <div class="paid-text">Paid</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-3">
+            <span style="position: absolute; margin-left: 40px;">558612</span>
+            <span style="position: absolute; margin-left: 200px; width: 142px;">Other</span>
+            <span style="position: absolute; margin-left: 470px;">jessica.hanson@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="paid">
+                <div class="paid-text">Paid</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-4">
+            <span style="position: absolute; margin-left: 40px;">558612</span>
+            <span style="position: absolute; margin-left: 200px; width: 142px;">Vendor</span>
+            <span style="position: absolute; margin-left: 470px;">alma.lawson@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="paid">
+                <div class="paid-text">Paid</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-5">
+            <span style="position: absolute; margin-left: 40px;">558612</span>
+            <span style="position: absolute; margin-left: 200px; width: 216px;">Property Management Company</span>
+            <span style="position: absolute; margin-left: 470px;">kenzi.lawson@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="paid">
+                <div class="paid-text">Paid</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-6">
+            <span style="position: absolute; margin-left: 40px;">651535</span>
+            <span style="position: absolute; margin-left: 200px; width: 163px;">Subcontractor Company</span>
+            <span style="position: absolute; margin-left: 470px;">jackson.graham@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="failed">
+                <div class="failed-text">Failed</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-7">
+            <span style="position: absolute; margin-left: 40px;">653518</span>
+            <span style="position: absolute; margin-left: 200px; width: 142px;">Mortgage Company</span>
+            <span style="position: absolute; margin-left: 470px;">felicia.reid@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="pending">
+                <div class="pending-text">Pending</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-8">
+            <span style="position: absolute; margin-left: 40px;">487441</span>
+            <span style="position: absolute; margin-left: 200px; width: 142px;">TPA</span>
+            <span style="position: absolute; margin-left: 470px;">dolores.chambers@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="paid">
+                <div class="paid-text">Paid</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-9">
+            <span style="position: absolute; margin-left: 40px;">267400</span>
+            <span style="position: absolute; margin-left: 200px; width: 142px;">Fire Department</span>
+            <span style="position: absolute; margin-left: 470px;">nevaeh.simmons@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="failed">
+                <div class="failed-text">Failed</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+
+        <div class="in-row-10">
+            <span style="position: absolute; margin-left: 40px;">449003</span>
+            <span style="position: absolute; margin-left: 200px; width: 142px;">Insurance Carrier</span>
+            <span style="position: absolute; margin-left: 470px;">curtis.weaver@example.com</span>
+            <span style="position: absolute; margin-left: 740px; width: 89px;">24 May, 2020</span>
+            <span style="position: absolute; margin-left: 900px" class="paid">
+                <div class="paid-text">Paid</div>
+            </span>
+            <span style="position: absolute; margin-left: 1060px;">$47,800</span>
+        </div>
+    </div>
 </body>
 
 </html>
